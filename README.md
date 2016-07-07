@@ -228,4 +228,10 @@ Rough todolist
 ChangeLog
 ---------
 
+* **Add `PhantomJS` request engine.** -- By JerryC8080    
+    Node-Crawler is use `request` to make http request by default. But it can't get the correct DOM if the target page is rendered by client script such as: AngularJS, ReactJS... 
+    So, add `PhantomJS` for optional to request such sort of page. Note that `PhantomJS` is unuse by default, you should set `option.phantom = true`, to open it.
+    And you also note that `PhantomJS` is lower efficiency then `request`. 
+
 See https://github.com/sylvinus/node-crawler/releases
+
